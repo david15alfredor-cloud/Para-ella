@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Para ti</title>
+    <style>
+        body {
+            /* Inspirado en los colores de Aurora: Rosa y Azul cielo */
+            background: linear-gradient(135deg, #fce4ec, #e3f2fd);
+            color: #4a148c;
+            font-family: 'Georgia', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 3rem;
+            border-radius: 40px;
+            border: 2px solid #f8bbd0;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(233, 30, 99, 0.1);
+        }
+        .iconos { font-size: 2.5rem; margin-bottom: 15px; }
+        h1 { font-family: 'Brush Script MT', cursive; font-size: 2.5rem; color: #880e4f; }
+        .mensaje { font-size: 1.2rem; line-height: 1.6; color: #4a148c; }
+        .btn {
+            background: #ec407a;
+            border: none;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 25px;
+            transition: 0.3s;
+        }
+        .btn:hover { background: #d81b60; transform: scale(1.05); }
+        #oculto { display: none; margin-top: 25px; font-style: italic; color: #ad1457; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="iconos">👑 ✨ 🌹</div>
+    <h1>Gracias, princesa</h1>
+    <p class="mensaje">
+        No sé qué tienes, pero tu presencia tiene la capacidad de silenciar todo el ruido que a veces tengo en la cabeza. Gracias por estar, por hacerme reír y por ser mi paz en momentos difíciles.
+    </p>
+    <button class="btn" onclick="mostrar()">Un secreto especial</button>
+    <p id="oculto">
+        Ayer fuiste un apoyo enorme, incluso con todas las limitaciones que tenemos. Me ayudaste a dormir tranquilo, y sentí que por fin podía descansar de verdad.
+    </p>
+</div>
+
+<script>
+    function mostrar() {
+        document.getElementById('oculto').style.display = 'block';
+    }
+</script>
+</body>
+</html>
